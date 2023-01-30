@@ -34,7 +34,7 @@ public class Main {
         System.out.println();
     }
 
-    public static String getTopBookNameByAuthor(Author author) throws URISyntaxException, RuntimeException {
+    public static String getTopBookNameByAuthor(Author author) throws URISyntaxException {
 
         URI uri = new URI("https://openlibrary.org/search/authors.json?q="
                 + author.getLastName() + "+" + author.getFistName());
