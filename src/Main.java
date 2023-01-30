@@ -40,9 +40,7 @@ public class Main {
                 + author.getLastName() + "+" + author.getFistName());
 
         JSONObject answer = formAndSendHTTPRequest(uri);
-
         JSONArray docs = answer.getJSONArray("docs");
-
         JSONObject first = docs.getJSONObject(0);
 
         return (String) first.get("top_work");
